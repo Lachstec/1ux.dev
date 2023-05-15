@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <p>
+    # Most recent posts
+  </p>
+  <div>
+    {{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+      {{  .Render "summary" }}
+      <br>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

@@ -1,3 +1,39 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://www.1ux.dev'
+languageCode = 'en'
+author = 'Leon Lux'
+theme = 'risotto'
+title = '1ux.dev'
+DefaultContentLanguage = 'en'
+copyright = '© 2023 Leon Lux'
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+
+sectionPagesMenu = 'main'
+
+[params]
+noindex = false
+
+[params.theme]
+palette = 'tokyo-night-dark'
+
+[params.about]
+title = '1ux.dev'
+description = 'Comp-Sci Student posting technical stuff about his learnings and interests'
+
+[[params.socialLinks]]
+icon = 'fa-brands fa-github'
+title = 'GitHub'
+url = 'https://github.com/Lachstec'
+
+[[params.socialLinks]]
+icon = 'fa-solid fa-envelope'
+title = 'E-Mail'
+url = 'mailto:leonlux@icloud.com'
+
+[menu]
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 10
