@@ -3,13 +3,14 @@ base_url = "https://1ux.dev"
 title = "Leons Dev Blog"
 description = "Me posting about various technological topics that pique my interest."
 default_language = "en"
-theme = "feather"
+theme = "zola-bearblog"
 minify_html = true
 generate_feed = true
 feed_filename = "rss.xml"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
+taxonomies = [{name = "tags", feed = true}]
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
@@ -22,3 +23,8 @@ highlight_theme = "base16-ocean-dark"
 
 [extra]
 # Put all your custom variables here
+date_format = "%d.%m.%Y"
+
+[[extra.main_menu]]
+name = "Blog"
+url = "@/blog/_index.md"
